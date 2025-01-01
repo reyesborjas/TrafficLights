@@ -1,13 +1,16 @@
 //import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom/client";
+import TrafficLight from "./component/TrafficLight";
 
 // include your styles into the webpack bundle
-import "../styles/index.css";
+import "./component/TrafficLight.css";
+
 
 //import your own components
-import Home from "./component/home.jsx";
+<TrafficLight/>
 
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+const root = ReactDOM.createRoot(document.getElementById("app"));
+root.render(<TrafficLight />);
 
